@@ -3,9 +3,16 @@ x=int(input("Enter a number\n>"))
 y=int(input("Enter a number\n>"))
 z=int(input("Enter a number\n>"))
 
-# Sum the numbers
+# Put numbers in a list and confirm with user
 numbers = [x, y, z]
-total = sum(numbers)
+print(f"Your entered numbers are {numbers}.")
+answer = input("Is that correct? Y or N\n>")
 
-# Display a message to console with the calculated sum
-print(f"Python says the answer is {total}.")
+if answer == "Y":
+    # Sum the numbers
+    total = sum(numbers)
+    # Display a message to console with the calculated sum
+    print(f"Python says the answer is {total}.")
+else:
+    print("Sorry, let's play again another time.")
+
