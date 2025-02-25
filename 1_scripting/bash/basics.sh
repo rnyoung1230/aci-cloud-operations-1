@@ -3,20 +3,20 @@
 
 # Define the variables
 name="Pat Candella"
-sent_1="Customer name is $name"
+message="Customer name is $name"
 car="Mercedes Benz"
-car_wash_services=("Basic wash" "Premium wash" "Interior detail" "Full service")
+car_wash_services=("basic wash" "premium wash" "interior detail" "full service")
 
 
 # Display a message using the above variables
-echo "$sent_1. $name owns a $car."
+echo "$message. He owns a $car."
 
 # Assign the echo command output to a variable named services
-services=$(echo "Our car wash services include: ${car_wash_services[2]} and ${car_wash_services[3]}")
+services=$(echo "Our car wash services include: ${car_wash_services[0]} and ${car_wash_services[1]}")
 
-# Creat a function named greet() that references the variable services
+# Create a function named greet() that references the variable services
 greet() {
-    echo "Welcome to AnyCompany Car Washes! $services."
+    echo "Welcome to AnyCompany Car Washes $name! $services."
 }
 
 # Call the function

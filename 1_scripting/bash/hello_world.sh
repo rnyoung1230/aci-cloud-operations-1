@@ -16,7 +16,7 @@ greet
 # Create a function that receives an argument
 
 introduce() {
-    echo "My name is $1 $2"
+    echo "My name is $1 $2."
 }
 
 introduce "Nikki" "Wolfe"
