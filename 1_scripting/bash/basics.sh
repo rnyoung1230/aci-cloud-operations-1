@@ -2,7 +2,7 @@
 # This is a comment
 
 # Define the variables
-name="Pat Candella"
+name="Sam Candella"
 message="Customer name is $name"
 car="Mercedes Benz"
 car_wash_services=("basic wash" "premium wash" "interior detail" "full service")
